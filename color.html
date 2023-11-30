@@ -1,11 +1,13 @@
 <html>
-<style>
-p{color:red;
-background:blue;
+<body bgcolor="red">
+<button onclick="changeColor()">change</button>
+<script>
+var colors=["red","blue","green","yellow"];
+var index=0
+function changeColor(){
+document.body.style.backgroundColor=colors[index];
+index = (index + 1)%colors.length;
 }
-</style>
-<body>
-<p>internal css</p>
-<p>p2</p>
+</script>
 </body>
 </html>
